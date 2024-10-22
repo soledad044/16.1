@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de APIs y Funcionalidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resumen sobre APIs</h1>
+        </header>
+        <section class="summary">
+            <h2>¿Qué es una API?</h2>
+            <p>Una API (Interfaz de Programación de Aplicaciones) es un conjunto de reglas y protocolos que permiten diseñar e integrar el software de diversas aplicaciones. Facilita la comunicación entre productos y servicios sin necesidad de conocer su implementación interna, lo que simplifica el desarrollo y reduce costos.</p>
+
+            <h2>Funcionamiento de una API</h2>
+            <p>Las APIs operan como acuerdos entre diferentes sistemas, donde la documentación especifica cómo realizar solicitudes y qué respuestas se deben esperar. Esto fomenta la colaboración entre equipos comerciales y técnicos, facilitando la integración de nuevas aplicaciones en arquitecturas existentes. En un entorno digital dinámico, las APIs permiten un desarrollo ágil y promueven la innovación en servicios.</p>
+            <p>Además, las APIs son una herramienta para compartir datos con usuarios externos. Por ejemplo, una distribuidora de libros podría ofrecer una API para que las librerías consulten la disponibilidad de títulos, generando beneficios como:</p>
+            <ul>
+                <li>Acceso sencillo a datos para los clientes.</li>
+                <li>Posibilidad de realizar cambios internos sin afectar a los usuarios.</li>
+                <li>Oportunidades comerciales a través de aplicaciones de terceros que utilicen la API.</li>
+            </ul>
+
+            <h2>Políticas de Lanzamiento de APIs</h2>
+            <ul>
+                <li><strong>Privadas:</strong> Uso restringido a la empresa, lo que proporciona mayor control.</li>
+                <li><strong>De Socios:</strong> Compartidas con aliados específicos, permitiendo ingresos adicionales sin comprometer la calidad.</li>
+                <li><strong>Públicas:</strong> Acceso abierto a todos, fomentando el desarrollo de aplicaciones que interactúan con la API.</li>
+            </ul>
+
+            <h2>Innovaciones Facilitadas por las APIs</h2>
+            <ul>
+                <li>Crear nuevos flujos de ingresos.</li>
+                <li>Ampliar la visibilidad de la marca.</li>
+                <li>Fomentar la innovación colaborativa mediante asociaciones externas.</li>
+            </ul>
+
+            <h2>Historia y Evolución de las APIs</h2>
+            <p>Las APIs han existido desde los inicios de la informática y, desde principios de los años 2000, se han vuelto esenciales para la integración remota de datos. Las APIs remotas permiten la interacción a través de redes, utilizando estándares web y normalmente enviando respuestas en formatos como XML o JSON.</p>
+
+            <h2>Diferencias entre SOAP y REST</h2>
+            <ul>
+                <li><strong>SOAP:</strong> Un protocolo que utiliza XML y facilita la integración entre aplicaciones en diferentes entornos.</li>
+                <li><strong>REST:</strong> Un estilo arquitectónico que no impone un estándar específico, lo que permite mayor flexibilidad en el diseño de APIs.</li>
+            </ul>
+
+            <h2>Arquitectura de Servicios</h2>
+            <ul>
+                <li><strong>Arquitectura Orientada a Servicios (SOA):</strong> Permite la integración de múltiples aplicaciones, pero puede generar complejidades con los cambios.</li>
+                <li><strong>Microservicios:</strong> Descompone las aplicaciones en partes más pequeñas y especializadas, utilizando APIs RESTful para la comunicación entre ellas, lo que facilita un desarrollo más ágil y eficiente.</li>
+            </ul>
+
+            <h2>Diferencias entre APIs y Webhooks</h2>
+            <p>Un webhook es un mecanismo que permite a dos APIs comunicarse mediante eventos de manera eficiente. A diferencia de las APIs, donde el cliente inicia la solicitud, en los webhooks el servidor envía datos al cliente cuando están disponibles, optimizando así la comunicación.</p>
+        </section>
+
+        <section class="api-functionality">
+            <h2>Publicaciones de JSONPlaceholder</h2>
+            <div id="posts" class="posts"></div>
+            <button id="loadPosts">Cargar Publicaciones</button>
+        </section>
+    </div>
+    <script src="fetchPosts.js"></script>
+</body>
+</html>
