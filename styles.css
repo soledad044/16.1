@@ -24,17 +24,18 @@ header {
 }
 
 h1 {
-    color: #6f42c1; 
+    color: #6f42c1; /* Color morado */
 }
 
 h2 {
-    color: #5e35b1; 
+    color: #5e35b1; /* Color morado más oscuro */
     font-family: 'Georgia', serif; /* Fuente diferente para los títulos */
     transition: color 0.3s; /* Transición suave para el color */
 }
 
 h2:hover {
-    color: #4a148c; 
+    color: #4a148c; /* Color al hacer hover */
+}
 
 .summary p, .summary ul {
     margin: 10px 0;
@@ -53,7 +54,8 @@ h2:hover {
 
 .post h2 {
     margin: 0 0 10px;
-    color: #6f42c1; 
+    color: #6f42c1; /* Color morado */
+}
 
 .post p {
     margin: 0;
@@ -61,9 +63,20 @@ h2:hover {
 
 button {
     padding: 10px 15px;
-    background-color: #6f42c1; 
+    background-color: #6f42c1; /* Color morado */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: backgrou
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+    background-color: #5e35b1; /* Color más oscuro al hacer hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
