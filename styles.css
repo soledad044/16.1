@@ -4,7 +4,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url('https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 20px;
 }
@@ -12,7 +13,7 @@ body {
 .container {
     max-width: 900px;
     margin: auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,17 +25,24 @@ header {
 }
 
 h1 {
-    color: #6f42c1; /* Color morado */
+    color: #6f42c1;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #5e35b1; /* Color morado más oscuro */
-    font-family: 'Georgia', serif; /* Fuente diferente para los títulos */
-    transition: color 0.3s; /* Transición suave para el color */
+    color: #5e35b1;
+    font-family: 'Georgia', serif;
+    transition: color 0.3s;
 }
 
 h2:hover {
-    color: #4a148c; /* Color al hacer hover */
+    color: #4a148c;
 }
 
 .summary p, .summary ul {
@@ -46,7 +54,7 @@ h2:hover {
 }
 
 .post {
-    background: #e9ecef;
+    background: rgba(233, 236, 239, 0.9);
     margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
@@ -54,29 +62,42 @@ h2:hover {
 
 .post h2 {
     margin: 0 0 10px;
-    color: #6f42c1; /* Color morado */
+    color: #6f42c1;
 }
 
 .post p {
     margin: 0;
 }
 
-button {
+.button {
     padding: 10px 15px;
-    background-color: #6f42c1; /* Color morado */
+    background-color: #6f42c1;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave para el fondo */
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
 }
 
-button:hover {
-    background-color: #5e35b1; /* Color más oscuro al hacer hover */
+.button:hover {
+    background-color: #5e35b1;
 }
 
 @media (max-width: 600px) {
     .container {
         padding: 10px;
     }
+}
+
+h2#togglePostsTitle {
+    color: #6f42c1;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
